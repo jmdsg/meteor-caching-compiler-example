@@ -9,8 +9,8 @@ Package.describe({
 Package.registerBuildPlugin({
   name: 'static-assets',
   use: [
-    'caching-compiler@1.1.9',
-    'ecmascript@0.9.0',
+    'caching-compiler@1.2.0',
+    'ecmascript@0.12.1',
   ],
   sources: [
     'sha1.js',
@@ -25,6 +25,6 @@ Package.registerBuildPlugin({
 });
 
 Package.onUse(function (api) {
-  // api.versionsFrom('1.8');
+  api.versionsFrom('1.8');
   api.use('isobuild:compiler-plugin@1.0.0');
 });
